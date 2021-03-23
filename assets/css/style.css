@@ -1,0 +1,160 @@
+@import url('linkrel="preconnect"href="https://fonts.gstatic.com"><linkhref="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap"rel="stylesheet">');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgb(81, 122, 209) 0%,
+    rgba(0, 212, 255, 1) 100%
+  );
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  width: 100%;
+  height: 100vh;
+
+  overflow: hidden;
+
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+
+  position: relative;
+}
+
+.header-container{
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 80px;
+  background-color: rgb(29, 29, 29);
+
+  display: flex;
+  align-items: center;
+  padding: 0 30px;
+}
+
+.header-container a{
+  text-decoration: none;
+  font-size: 1.4rem;
+
+  color: #f8f8f8;
+
+  font-weight: 600;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  background-color: #fff;
+
+  padding: 10px;
+  padding-bottom: 100px;
+  width: 500px;
+  height: 500px;
+
+  border-radius: 10px;
+  border: 1px solid #c4c4c4;
+
+  box-shadow: 0px 0px 20px black;
+}
+
+h2 {
+  letter-spacing: 2px;
+  color: rgb(44, 44, 44);
+}
+
+form {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+}
+form label {
+  margin-bottom: 10px;
+  font-size: 1.4rem;
+  font-weight: 500;
+}
+form input {
+  height: 3rem;
+  width: 400px;
+  
+  padding: 10px;
+  margin-bottom: 20px;
+  
+  font-size: 1.3rem;
+
+  border-radius: 70px;
+  border: 2px solid rgb(231, 231, 231);
+  background-color: rgb(255, 255, 255);
+
+  color: rgb(66, 66, 66);
+}
+form input::placeholder{
+  color: rgb(187, 187, 187);
+}
+
+form button {
+  background: transparent;
+  border: 1px solid rgb(235, 235, 235);
+  height: 3rem;
+  
+  border-radius: 70px;
+  font-size: 1.4rem;
+  color: rgb(129, 129, 129);
+  transition: 200ms all ease-in-out;
+  cursor: pointer;
+}
+form button:hover{
+  background-color: #33faae;
+  color: black;
+  border: 1px solid rgb(126, 126, 126);
+}
+
+.resultado{
+  width: 90%;
+  height: 160px;
+  display: flex;
+  align-items: center;
+  padding: 20px;
+}
+
+.paragrafo-resultado, .bad{
+  background-color: rgb(81, 253, 152);
+  padding: 10px;
+  width: 100%;
+  color: black;
+  font-size: 1.4rem;
+}
+
+.bad{
+  background-color: rgb(255, 128, 128);
+}
+
+@media(max-width:760px){
+  .container {
+    width: 100vw;
+    height: 100vh;
+    border-radius: 0;
+  }
+  form input {
+    width: 100%;
+  }
+  h2{
+    font-size: 1.1rem;
+    margin-top: 10px;
+  }
+}
